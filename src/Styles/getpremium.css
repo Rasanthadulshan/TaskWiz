@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.getpremium-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.getpremium-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.getpremium-button {
+  padding: 10px;
+  background-color: black;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.getpremium-button a {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.getpremium-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 15px;
+}
+
+.getpremium-header h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 25px;
+  color: #555;
+}
+
+.getpremium-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #222;
+}
+
+.getpremium-header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.getpremium-reviews-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(161, 210, 224);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.getpremium-reviews {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.getpremium-reviews img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.getpremium-reviews blockquote {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.getpremium-payment {
+  margin: 2rem 0;
+  width: 100%;
+  background-color: rgb(204, 231, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #050e0c;
+  border-radius: 20px;
+}
+
+.getpremium-payment h2 {
+  text-align: center;
+  margin: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.getpremium-payment form {
+  padding: 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.getpremium-payment label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.getpremium-payment input[type="text"],
+.getpremium-payment input[type="email"],
+.getpremium-payment input[type="number"],
+.getpremium-payment input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.getpremium-payment input[type="submit"] {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.getpremium-payment input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.getpremium-payment input[type="text"]:focus,
+.getpremium-payment input[type="email"]:focus,
+.getpremium-payment input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 900px) {
+  .getpremium-payment form {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .getpremium-reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .getpremium-payment form {
+    padding: 0 30px;
+  }
+}

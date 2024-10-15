@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Addprojectdata {
+  background: linear-gradient(135deg, #bacbdb, #8baef3);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: auto;
+}
+
+.Addprojectdata-intro {
+  margin: 2rem;
+}
+
+.Addprojectdata-intro p {
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.Addprojectdataform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  background: linear-gradient(135deg, #4da8c4, #c8dae6);
+}
+
+.addprojectmain {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.addprojectmain h2 {
+  font-size: 26px;
+  color: #333;
+}
+
+.addprojectmain p {
+  font-size: 16px;
+  color: #666;
+}
+
+.Addprojectdatadiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Addprojectdatadiv label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.Addprojectdatadiv input,
+.Addprojectdatadiv textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.Addprojectdatadiv textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.buttongroup {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.buttongroup a,button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 860px) {
+  .Addprojectdata-intro p {
+    font-size: 2rem;
+  }
+  .Addprojectdataform {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Addprojectdata-intro p {
+    font-size: 1.5rem;
+  }
+  .Addprojectdataform {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Addprojectdata-intro p {
+    font-size: 1.5rem;
+  }
+  .Addprojectdataform {
+    max-width: 300px;
+  }
+}

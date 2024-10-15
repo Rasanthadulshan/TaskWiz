@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nopage-content {
+  background-color: bisque;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nopage-content h2 {
+  font-size: 50px;
+  margin: 2rem;
+}
+
+.nopage-content p {
+  font-size: 1rem;
+}
+
+.nopage-content a {
+  margin-left: 0.5rem;
+  color: black;
+}
+
+.nopage-content a:hover {
+  color: gray;
+}

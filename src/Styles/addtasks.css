@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Addtaskdata {
+  background: linear-gradient(135deg, #bacbdb, #8baef3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height:auto;
+}
+
+.Addtaskdata-intro {
+  font-weight: 800;
+  margin: 2rem;
+}
+
+.Addtaskdata-intro p {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.Addtaskdataform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  background: linear-gradient(135deg, #4da8c4, #c8dae6);
+}
+ 
+.addtasksmain {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.addtasksmain h2 {
+  font-size: 26px;
+  color: #333;
+}
+
+.addtasksmain p {
+  margin-top: 0.7rem; 
+  font-size: 16px;
+  color: #666;
+}
+
+.Addtasksheader {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.Addtaskdatadiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1.5rem;
+}
+
+.Addtaskdatadiv label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.Addtaskdatadiv input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.buttongroup {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.buttongroup a,
+.addbutton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.buttongroup a:hover {
+  background-color: #0056b3;
+}
+
+.buttongroup a:first-child {
+  background-color: #6c757d;
+}
+
+.buttongroup a:first-child:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 860px) {
+  .Addtaskdata-intro p{
+    font-size: 2rem;
+  }
+  .Addtaskdataform {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Addtaskdata-intro p {
+    font-size: 1.5rem;
+  }
+  .Addtaskdataform {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Addtaskdata-intro p{
+    font-size: 1.5rem;
+  }
+  .Addtaskdataform {
+    max-width: 300px;
+  }
+}

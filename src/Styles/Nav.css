@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+
+/* navigation bar */
+.main_navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-shorts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-shorts ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-shorts li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-shorts li a:hover {
+  color: blue;
+}
+
+.navbar-createaccount {
+  margin-left: 3rem;
+  text-align: center;
+}
+
+/* toggle button */
+.toggle_button button {
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+  top: 35px;
+  right: 20px;
+}
+
+.toggle_button img {
+  height: 24px;
+  width: 24px;
+}
+
+.navbar-createaccount .Signup_button {
+  background-color: whitesmoke;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-createaccount .Signup_button:hover {
+  color: blue;
+}
+
+/* dropdown menu */
+.dropdown_menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.dropdown_menu.open {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.dropdown_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown_menu li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.dropdown_menu li:last-child {
+  border-bottom: none;
+  background-color: #007bff;
+}
+
+.dropdown_menu a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown_menu a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+/* tagline area */
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 2rem;
+  line-height: 1.2;
+}
+
+.main-introduction {
+  padding: 1rem;
+}
+
+.main-introduction h1 {
+  font-size: 90px;
+}
+
+.main-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.boxButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.boxButton button {
+  width: 280px;
+  height: 70px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.boxButton .button1 {
+  background-color: rgba(24, 24, 235, 0.966);
+}
+
+.boxButton .button1 a {
+  color: aliceblue;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.boxButton .button2 {
+  background-color: rgba(112, 213, 216, 0.8);
+}
+
+.boxButton .button2 a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar-items {
+    display: none;
+  }
+  .toggle_button button {
+    display: block;
+  }
+  .main-introduction h1 {
+    font-size: 70px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  .main-introduction h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-introduction h1 {
+    font-size: 40px;
+  }
+  .boxButton {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .boxButton button {
+    width: 200px;
+  }
+}
+
+@media (max-width: 590px) {
+  .main {
+    flex-direction: column;
+  }
+  .main-introduction h1 {
+    font-size: 50px;
+  }
+  .boxButton button {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-introduction h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-introduction h1 {
+    font-size: 25px;
+  }
+}
